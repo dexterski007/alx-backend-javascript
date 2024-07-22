@@ -1,10 +1,7 @@
 export default function iterateThroughObject(reportWithIterator) {
-  let lastArray = '';
+  const lastArray = [];
   for (const element of reportWithIterator) {
-    lastArray += element + ' | ';
+    lastArray.push(element);
   }
-  if (lastArray.length > 0) {
-    lastArray = lastArray.slice(0, -3);
-  }
-  return lastArray;
+  return lastArray.join(' | ');
 }
