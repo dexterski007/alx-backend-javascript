@@ -1,11 +1,9 @@
 import signUpUser from './4-user-promise';
 import uploadPhoto from './5-photo-reject';
 
-export default async function handleProfileSignup([firstName, lastName, fileName]) {
-  const promiseUser = signUpUser([firstName, lastName]);
-  const promisePhoto = uploadPhoto(fileName);
-
-  return Promise.allSettled([promiseUser, promisePhoto])
+export default async function handleProfileSignup(firstName, lastName, fileName) {
+  return Promise
+    .allSettled([signUpUser(firstName, lastName), uploadPhoto(fileName)])
     .then((results) => {
       results.map((result) => ({
         status: result.status,
