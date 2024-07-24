@@ -6,6 +6,6 @@ export default async function asyncUploadUser() {
   try {
     return { photo: uploadPromise, user: userPromise };
   } catch (error) {
-    return { photo: null, user: null };
+    return { photo: 'null', user: 'null' };
   }
 }
