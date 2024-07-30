@@ -5,6 +5,6 @@ export default function cleanSet(set, startString) {
   }
   const finishString = Array.from(set)
     .filter((element) => element.startsWith(startString))
-    .map((element) => element.slice(startString.length))
+    .map((element) => element.replace(startString, ''));
   return finishString.join('-');
 }
