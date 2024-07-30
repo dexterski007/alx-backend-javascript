@@ -3,7 +3,7 @@ export default function cleanSet(set, startString) {
     return '';
   }
   const finishString = [];
-  set.forEach((element => {
+  set.forEach(((element) => {
     if (element.startsWith(startString)) {
       finishString.push(element.slice(startString.length));
     }
