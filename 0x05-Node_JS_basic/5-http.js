@@ -49,7 +49,7 @@ const app = createServer((req, res) => {
       .catch((error) => {
         res.statusCode = 404;
         res.setHeader('Content-Type', 'text/plain');
-        res.end(`Not found\n${error.message}`);
+        res.end(`This is the list of our students\n${error.message}`);
       });
   } else {
     res.statusCode = 404;
