@@ -3,6 +3,7 @@
         "test": "mocha"
     },
     "dependencies": {
-        "mocha": "^10.7.3"
+        "chai": "^4.5.0",
+        "mocha": "^8.4.0"
     }
 }
