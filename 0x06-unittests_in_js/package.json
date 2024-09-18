@@ -4,6 +4,7 @@
     },
     "dependencies": {
         "chai": "^4.5.0",
-        "mocha": "^8.4.0"
+        "mocha": "^8.4.0",
+        "sinon": "^17.0.1"
     }
 }
