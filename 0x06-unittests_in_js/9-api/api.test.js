@@ -36,7 +36,7 @@ describe('is cart ok ?', () => {
     });
   });
 
-  it('correct content', (done) => {
+  it('incorrect content', (done) => {
     request.get(`${apiUrl}/cart/str`, (error, response, body) => {
       expect(response.statusCode).to.equal(404);
       done();
